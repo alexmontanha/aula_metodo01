@@ -10,6 +10,10 @@ public class App {
 
     public static void calculaMediaImprime(double nota1, double nota2, double nota3, double nota4, int grupo) throws Exception {
         double media = calculaMedia(nota1, nota2, nota3, nota4);
+        imprime(media, grupo);
+    }
+
+    public static void imprime(double media, int grupo) {
         System.out.println("A média do grupo " + grupo +": " + media);
     }
 
